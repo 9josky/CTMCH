@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./images/CTM-Church-bg.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="We are a non-denominational, inter-generational and innovative church and ministry"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/CTM-Church.jpg" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,20 +24,209 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Christ The Truth Ministries Calvary House</title>
+
+    <!-- Google Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Styles -->
+
+    <link
+      href="font-awesome/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css" />
+    <link href="css/revolution.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/settings.css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/colors/red.css"
+      title="color1"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="css/colors/wedgewood.css"
+      title="color2"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="css/colors/blue.css"
+      title="color3"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="css/colors/green.css"
+      title="color4"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="css/colors/darkgreen.css"
+      title="color5"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root" class="theme-layout"></div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- SCRIPTS-->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script type="text/javascript" src="js/modernizr.custom.17475.js"></script>
+
+    <script src="js/jquery.1.10.2.js" type="text/javascript"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.poptrox.min.js" type="text/javascript"></script>
+
+    <script src="js/enscroll-0.5.2.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/mediaelement-and-player.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/jquery.knob.js"></script>
+
+    <script src="js/knob-script.js"></script>
+
+    <script src="js/styleswitcher.js"></script>
+
+    <script src="js/jquery.minimalect.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/jquery.downCount.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".events").owlCarousel({
+          autoPlay: 8000,
+
+          rewindSpeed: 3000,
+
+          slideSpeed: 2000,
+
+          items: 3,
+
+          itemsDesktop: [1199, 3],
+
+          itemsDesktopSmall: [979, 2],
+
+          itemsTablet: [768, 1],
+
+          itemsMobile: [479, 1],
+
+          navigation: false,
+        }); /*** CAROUSEL ***/
+
+        $(".blog-carousel").owlCarousel({
+          autoPlay: 5000,
+
+          slideSpeed: 1000,
+
+          singleItem: true,
+
+          transitionStyle: "backSlide",
+
+          navigation: false,
+        }); /*** BLOG CAROUSEL ***/
+
+        $(".team-carousel").owlCarousel({
+          autoPlay: 8000,
+
+          rewindSpeed: 3000,
+
+          slideSpeed: 2000,
+
+          items: 2,
+
+          itemsDesktop: [1199, 2],
+
+          itemsDesktopSmall: [979, 2],
+
+          itemsTablet: [768, 2],
+
+          itemsMobile: [479, 1],
+
+          navigation: false,
+        }); /*** TEAM CAROUSEL ***/
+
+        $("#donate").minimalect({ theme: "bubble", placeholder: "Select" });
+      });
+
+      $("audio,video").mediaelementplayer();
+    </script>
+
+    <!-- SLIDER REVOLUTION -->
+
+    <script
+      type="text/javascript"
+      src="js/revolution/jquery.themepunch.tools.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="js/revolution/jquery.themepunch.revolution.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="js/revolution/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="js/revolution/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="js/revolution/extensions/revolution.extension.navigation.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        jQuery("#slider1").revolution({
+          sliderType: "standard",
+
+          sliderLayout: "fullwidth",
+
+          delay: 9000,
+
+          navigation: {
+            arrows: { enable: true },
+          },
+
+          gridwidth: 1100,
+
+          gridheight: 500,
+        });
+      });
+    </script>
   </body>
 </html>
